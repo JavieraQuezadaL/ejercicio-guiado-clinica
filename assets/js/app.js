@@ -40,10 +40,10 @@ const dental = document.querySelector(`#dental`)
 radiologia.textContent = `Radiología: Primera atención: ${arrayRadiologias[0].paciente} - ${arrayRadiologias[0].prevision} |  Última atención: ${arrayRadiologias[arrayRadiologias.length - 1].paciente} - ${arrayRadiologias[arrayRadiologias.length - 1].prevision}`
 
 //TRAUMATOLOGIA
-// traumatologia.textContent = `Traumatología: Primera atención: ${arrayTraumatologias[0].paciente} - ${arrayTraumatologias[0].prevision} |  Última atención: ${arrayTraumatologias[arrayTraumatologias.length - 1].paciente} - ${arrayTraumatologias[arrayTraumatologias.length - 1].prevision}`
+traumatologia.textContent = `Traumatologia: Primera atención: ${arrayTraumatologias[0].paciente} - ${arrayTraumatologias[0].prevision} |  Última atención: ${arrayTraumatologias[arrayTraumatologias.length - 1].paciente} - ${arrayTraumatologias[arrayTraumatologias.length - 1].prevision}`
 
 //DENTAL
-// dentales.textContent = `Dentales: Primera atención: ${arrayDentales[0].paciente} - ${arrayDentales[0].prevision} |  Última atención: ${arrayDentales[arrayDentales.length - 1].paciente} - ${arrayDentales[arrayDentales.length - 1].prevision}`
+dental.textContent = `Dental: Primera atención: ${arrayDentales[0].paciente} - ${arrayDentales[0].prevision} |  Última atención: ${arrayDentales[arrayDentales.length - 1].paciente} - ${arrayDentales[arrayDentales.length - 1].prevision}`
 
 
 
@@ -55,36 +55,36 @@ const tablaDental = document.querySelector(`#tablaDental`)
 //iterar sobre el array RADIOLOGIAS
 for (const item of arrayRadiologias) {
     tablaRadiologia.innerHTML += `
-    < tr >
+    <tr>
     <td>${item.hora}</td>
     <td>${item.especialista}</td>
     <td>${item.paciente}</td>
     <td>${item.rut}</td>
     <td>${item.prevision}</td>
-    </tr > `
+    </tr> `
 }
 //TRAUMATOLOGIAS
 for (const item of arrayTraumatologias) {
     tablaTraumatologia.innerHTML += `
-    < tr >
+    <tr>
     <td>${item.hora}</td>
     <td>${item.especialista}</td>
     <td>${item.paciente}</td>
     <td>${item.rut}</td>
     <td>${item.prevision}</td>
-    </tr > `
+    </tr> `
 }
 
 //DENTALES
 for (const item of arrayDentales) {
     tablaDental.innerHTML += `
-    < tr >
+    <tr>
     <td>${item.hora}</td>
     <td>${item.especialista}</td>
     <td>${item.paciente}</td>
     <td>${item.rut}</td>
     <td>${item.prevision}</td>
-    </tr > `
+    </tr> `
 }
 
 
